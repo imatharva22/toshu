@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game with Math Questions</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    
+    <h1>Snake Game</h1>
+    <canvas id="gameCanvas"></canvas>
+    
+    
+    <div id="mathQuestion" class="modal hidden">
+        <div class="modal-content">
+            <h2>Answer to Continue!</h2>
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Your answer">
+            <button onclick="checkAnswer()">Submit</button>
+        </div>
+    </div>
+
+    <div id="gameOver" class="modal hidden">
+        <div class="modal-content">
+            <h2>Game Over</h2>
+            <p>Incorrect Answer! Try again?</p>
+            <button onclick="startNewGame()">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
